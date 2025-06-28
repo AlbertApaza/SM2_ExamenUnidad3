@@ -10,7 +10,7 @@
 ---
 
 ### URL del Repositorio
-- **URL:** `https://github.com/tu-usuario/SM2_ExamenUnidad3` *(Recuerda reemplazar "tu-usuario" con tu nombre de usuario de GitHub)*
+- **URL:** `[https://github.com/tu-usuario/SM2_ExamenUnidad3](https://github.com/AlbertApaza/SM2_ExamenUnidad3)` 
 
 ---
 
