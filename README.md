@@ -9,8 +9,9 @@
 
 ---
 
-### URL del Repositorio
-- **URL:** `[https://github.com/tu-usuario/SM2_ExamenUnidad3](https://github.com/AlbertApaza/SM2_ExamenUnidad3)` 
+graph TD
+    Note["🔗 Repositorio GitHub:<br><a href='https://github.com/AlbertApaza/SM2_ExamenUnidad3' target='_blank'>AlbertApaza/SM2_ExamenUnidad3</a>"]
+
 
 ---
 
