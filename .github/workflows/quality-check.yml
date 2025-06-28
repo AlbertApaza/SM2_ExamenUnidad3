@@ -41,3 +41,14 @@ jobs:
           echo "❌ Errores: $ERRORS"
           echo "⚠️ Advertencias: $WARNINGS"
           echo "ℹ️ Información: $INFOS"
+      
+          echo ""
+          echo "🔎 Detalles (máx 5 por tipo):"
+      
+          echo ""
+          echo "⚠️ Advertencias:"
+          jq -r '[.diagnostics[] | select(.severity == "WARNING")][0:5][] | "[\(.location.file):\(.location.range.start.line)] \(.problemMessage)"' analyze_output.json
+      
+          echo ""
+          echo "ℹ️ Información:"
+          jq -r '[.diagnostics[] | select(.severity == "INFO")][0:5][] | "[\(.location.file):\(.location.range.start.line)] \(.problemMessage)"' analyze_output.json
