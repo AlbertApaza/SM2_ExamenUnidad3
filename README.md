@@ -22,7 +22,7 @@ El objetivo de este proyecto fue implementar un pipeline de **Integración Conti
 El flujo de trabajo configurado automatiza dos tareas críticas de calidad en cada `push` o `pull request` a la rama `main`:
 
 1.  **Ejecución de Pruebas (`flutter test`):** Se ejecuta una suite completa de pruebas que validan la lógica de negocio de la aplicación, específicamente las reglas de validación de los formularios de registro e inicio de sesión. Esto asegura que la funcionalidad principal no se rompa con nuevos cambios.
-2.  **Análisis Estático de Código (`flutter analyze`):** Se realiza un análisis de todo el código fuente para detectar errores, advertencias y violaciones de buenas prácticas de estilo. Esto garantiza que el código se mantenga limpio, legible y mantenible a lo largo del tiempo.
+2.  **Análisis  de Código (`flutter analyze`):** Se realiza un análisis de todo el código fuente para detectar errores, advertencias y violaciones de buenas prácticas de estilo. Esto garantiza que el código se mantenga limpio, legible y mantenible a lo largo del tiempo.
 
 La implementación de este pipeline de CI/CD es una práctica fundamental de DevOps que permite entregar software de mayor calidad de manera más rápida y fiable.
 
@@ -285,7 +285,7 @@ El workflow se ejecutó exitosamente tras el último commit en la rama `main`. L
 
 **Puntos clave de los resultados:**
 - **11 de 11 pruebas pasaron** exitosamente, cubriendo la lógica de validación y la interacción con widgets.
-- El **análisis estático se completó sin errores críticos**, reportando 5 advertencias y 91 avisos informativos que no detuvieron el pipeline pero que sirven como guía para futuras mejoras.
+- El **análisis  se completó sin errores críticos**, reportando 5 advertencias y 91 avisos informativos que no detuvieron el pipeline pero que sirven como guía para futuras mejoras.
 
 A continuación se muestra la salida de la consola de la ejecución en GitHub Actions:
 
