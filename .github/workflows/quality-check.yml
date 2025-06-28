@@ -30,6 +30,7 @@ jobs:
       - name: Analyze and summarize issues
         continue-on-error: true
         run: |
+          set +e
           dart analyze --format=json > analyze_output.json
       
           echo "📊 Resumen del análisis:"
