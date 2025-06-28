@@ -1,4 +1,3 @@
-
 name: Quality Check APAZA
 
 on:
@@ -25,6 +24,19 @@ jobs:
       - name: Install dependencies
         run: flutter pub get
 
-
       - name: Run tests
         run: flutter test
+
+      - name: Analyze and summarize issues
+        continue-on-error: true
+        run: |
+          flutter analyze --no-pub --format=json > analyze_output.json
+
+          echo "📊 Resumen del análisis:"
+          ERRORS=$(jq '[.diagnostics[] | select(.severity == "ERROR")] | length' analyze_output.json)
+          WARNINGS=$(jq '[.diagnostics[] | select(.severity == "WARNING")] | length' analyze_output.json)
+          INFOS=$(jq '[.diagnostics[] | select(.severity == "INFO")] | length' analyze_output.json)
+
+          echo "❌ Errores: $ERRORS"
+          echo "⚠️ Advertencias: $WARNINGS"
+          echo "ℹ️ Información: $INFOS"
