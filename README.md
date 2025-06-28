@@ -1,8 +1,4 @@
-¡Perfecto! Has hecho todo el trabajo y ahora solo necesitas la documentación final. Aquí tienes el contenido completo y profesional para tu archivo `README.md`, redactado en formato Markdown como se solicita.
 
-Simplemente copia y pega todo este texto en tu archivo `README.md` en la raíz de tu repositorio.
-
----
 
 # Examen Práctico – Unidad III: Automatización de Calidad con GitHub Actions
 
